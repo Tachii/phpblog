@@ -11,7 +11,7 @@
         
         
         //Create Query
-        $query = "SELECT * FROM posts where category =".$category."ORDER BY id DESC";
+        $query = "SELECT * FROM posts where category = $category ORDER BY id DESC";
         //Run Query
         $posts = $db->select($query);
         
